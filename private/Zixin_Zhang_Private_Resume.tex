@@ -1,0 +1,122 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{Zixin Zhang}
+\address{https://www.zixin.dev \linebreak Password: 800963}
+\contacts{(217) 904-4187 \linebreak zixinzha@seas.upenn.edu}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{University of Pennsylvania}{Philadelphia, PA}{Fall 2020 -- May 2022}
+			\begin{itemize}
+				\item M.S.E. in Computer Graphics and Game Technology
+				\item Relevant Coursework: GPU Programming; Advanced Computer Graphics; Game Design; Artificial Intelligence; Independent Study on Procedural Graphics. 
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{University of Illinois}{Urbana-Champaign, IL}{Fall 2015 -- May 2019}
+			\begin{itemize}
+				\item B.S. in Statistics and Computer Science
+				\item Relevant Coursework: Data Structures and Algorithms; Computer Architecture.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Programming/Scripting:} C, C++, HLSL, GLSL, Typescript, Python.
+				\item \textbf{APIs:} OpenGL, WebGL, DirectX 11, DirectX 12, WebGPU, CUDA C++, Maya C++, SDL, Win32, Qt. 
+				\item \textbf{Engines/Tools:} Nsight, Pix, RenderDoc, Unity, Unreal Engine, Maya, Git, Premake, CMake.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Open Source Projects ( see more projects at https://www.zixin.dev )}
+		\begin{cvsubsection}{3D OpenGL Engine}{C++, OpenGL, GLSL}{Fall 2020 -- Present}	
+			\begin{itemize}
+				\item Working on a modern and efficient OpenGL 4.6 based graphics engine.
+				\item Implemented features including PBR, HDR, order-independent transparency, and GPU frustum culling. 
+				\item Coded core systems including a data-oriented scene graph, rendering queues, and multithreaded assets loading.
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{3D DirectX 12 Engine}{C++, DirectX12, HLSL}{Fall 2021 -- Present}		
+			\begin{itemize}
+				\item Working on a DX 12 renderer using C++, Win32, and HLSL.
+				\item Implemented features including character animation, SSAO, normal/cube/shadow mapping, picking, planar shadow/mirror via stenciling, and gaussian blur via compute shaders.
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{WebGPU glTF 2.0 Viewer}{Typescript, WebGPU}{Fall 2021}
+			\begin{itemize}
+				\item Created a glTF 2.0 PBR viewer using WebGPU with KHR lights punctual extension. 
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{CUDA Path Tracer}{C++, CUDA}{Fall 2021}	
+			\begin{itemize}
+				\item Implemented a CUDA-based, interactive Monte-Carlo path tracer. 
+				\item Coded a denoiser based on "Edge-Avoiding A-Trous Wavelet Transform for fast Global Illumination Filtering". 
+			\end{itemize}
+		\end{cvsubsection}
+		
+	\end{cvsection}
+	
+	\begin{cvsection}{Academic Projects ( see more projects at https://www.zixin.dev )}
+		\begin{cvsubsection}{Super Snow}{Team Project, Maya C++ SDK}{Spring 2022}	
+			\begin{itemize}
+				\item Super Snow is a Maya plugin for 3D snow simulation based on "A material point method for snow simulation".
+				\item Developed OpenGL and Maya 2D implementation and GUI design using MEL scripts. 
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Mini Minecraft}{Team Project, C++, Qt}{Fall 2020}	
+			\begin{itemize}
+				\item Mini Minecraft is an interactive 3D world exploration game.
+				\item Implemented game engine tick function, player physics, and multithreaded terrain generation.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Work Experience}
+		\begin{cvsubsection}{Software Engineer, Intern}{Tencent}{Summer 2016}	
+			\begin{itemize}
+				\item Collaborated with a partner to develop and implement the Raft Consensus algorithm using C++.
+				\item Prepared and delivered a successful presentation aimed at clarifying the algorithm for a wider audience.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+\end{document}
+
